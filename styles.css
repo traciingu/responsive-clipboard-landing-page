@@ -13,12 +13,12 @@ strong{
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: hsl(210, 10%, 33%);
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: hsl(210, 10%, 33%);
 }
 
@@ -28,3 +28,53 @@ h2 {
 
 
 /* Layout */
+header {
+    background: url("./images/bg-header-mobile.png") no-repeat center;
+    background-size: cover;
+    margin-bottom: 5em;
+}
+
+.header-container {
+    max-width: 100%;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header-logo {
+    max-width: 30%;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.download-btns-container {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin: 0px auto;
+}
+
+.download-btn {
+    border-radius: 2rem;
+    padding: 1em 2em;
+    margin: 0.5em 0;
+    border: none;
+}
+
+.cyan-btn {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 3px hsl(171, 66%, 34%);
+}
+
+.light-blue-btn {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 3px hsl(233, 46%, 50%);
+}
+
+.computer-screen-img {
+    width: 50%;
+}
+
+.devices-img {
+    width: 80%;
+}
