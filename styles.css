@@ -40,6 +40,25 @@ h3 {
     color: white;
 }
 
+/* Backgrounds & Colouring */
+header {
+    background: url("./images/bg-header-mobile.png") no-repeat center;
+    background-size: cover;
+}
+
+.cyan-btn {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 3px hsl(171, 66%, 34%);
+}
+
+.light-blue-btn {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 3px hsl(233, 46%, 50%);
+}
+
+footer {
+    background-color: hsl(0, 0%, 95%);
+}
 
 /* Layout */
 .section-container {
@@ -47,11 +66,6 @@ h3 {
     margin: 0 auto;
     margin-bottom: 4em;
     text-align: center;
-}
-
-header {
-    background: url("./images/bg-header-mobile.png") no-repeat center;
-    background-size: cover;
 }
 
 .header-logo {
@@ -73,16 +87,6 @@ header {
     padding: 1em 2em;
     margin: 0.5em 0;
     border: none;
-}
-
-.cyan-btn {
-    background-color: hsl(171, 66%, 44%);
-    box-shadow: 0px 3px hsl(171, 66%, 34%);
-}
-
-.light-blue-btn {
-    background-color: hsl(233, 100%, 69%);
-    box-shadow: 0px 3px hsl(233, 46%, 50%);
 }
 
 .outer-container-features p {
@@ -115,7 +119,6 @@ header {
 }
 
 footer {
-    background-color: hsl(0, 0%, 95%);
     display: flex;
     flex-direction: column;
     align-items: center;
