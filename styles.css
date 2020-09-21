@@ -6,20 +6,34 @@ body {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /* Typography */
-strong{
+strong, h1, h2, h3, footer {
     color: hsl(210, 10%, 33%);
+}
+
+a {
+    color: inherit;
+}
+
+strong{
     font-weight: 600;
 }
 
 h1 {
     font-size: 2rem;
-    color: hsl(210, 10%, 33%);
 }
 
 h2 {
     font-size: 1.5rem;
-    color: hsl(210, 10%, 33%);
+}
+
+h3 {
+    font-size: 1.25rem;
 }
 
 .download-btn {
@@ -28,34 +42,34 @@ h2 {
 
 
 /* Layout */
+.section-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
 header {
     background: url("./images/bg-header-mobile.png") no-repeat center;
     background-size: cover;
-    margin-bottom: 5em;
-}
-
-.header-container {
-    max-width: 100%;
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
 }
 
 .header-logo {
     max-width: 30%;
-    margin-top: 7rem;
-    margin-bottom: 2rem;
+    margin: 0 auto;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
 }
 
-.download-btns-container {
-    display: flex;
-    flex-direction: column;
-    width: inherit;
+.container-download-btns {
+    width: 100%;
     margin: 0px auto;
 }
 
 .download-btn {
     border-radius: 2rem;
+    font-size: 1.25rem;
+    width: 100%;
     padding: 1em 2em;
     margin: 0.5em 0;
     border: none;
@@ -71,10 +85,58 @@ header {
     box-shadow: 0px 3px hsl(233, 46%, 50%);
 }
 
-.computer-screen-img {
-    width: 50%;
+.outer-container-features p {
+    margin: 0;
 }
 
-.devices-img {
-    width: 80%;
+.container-features-text {
+    margin: 0 auto;
+}
+
+.computer-screen-img, .devices-img {
+    width: 90%;
+    margin: 2em auto;
+}
+
+.icon {
+    margin: 2em auto;
+}
+
+.partner-logo {
+    margin: 3.5em auto;
+}
+
+.partner-logo:first-of-type {
+    margin-top: 4em;
+}
+
+.tool:first-of-type {
+    margin-top: 5em;
+}
+
+footer {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.container-social-media {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    
+}
+
+.footer-logo {
+    width: 15%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    margin: .5em auto;
 }
