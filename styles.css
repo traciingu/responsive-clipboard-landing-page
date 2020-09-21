@@ -1,8 +1,30 @@
 body {
     font-size: 1.125rem;
-    color: #808080;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(201, 11%, 66%);
     margin: 0;
     padding: 0;
 }
 
 /* Typography */
+strong{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem;
+    color: hsl(210, 10%, 33%);
+}
+
+h2 {
+    font-size: 2rem;
+    color: hsl(210, 10%, 33%);
+}
+
+.download-btn {
+    color: white;
+}
+
+
+/* Layout */
