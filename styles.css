@@ -11,6 +11,10 @@ img {
     max-width: 100%;
 }
 
+:focus {
+    outline: hsl(201, 11%, 66%);
+}
+
 /* Typography */
 strong, h1, h2, h3, footer {
     color: hsl(210, 10%, 33%);
@@ -85,8 +89,15 @@ footer {
     font-size: 1.25rem;
     width: 100%;
     padding: 1em 2em;
-    margin: 0.5em 0;
+    margin: .5em 0;
     border: none;
+}
+
+@media (min-width: 600px) {
+    .download-btn {
+        width: 40%;
+        margin: .5em;
+    }
 }
 
 .outer-container-features p {
@@ -102,6 +113,21 @@ footer {
     margin: 2em auto;
 }
 
+@media (min-width: 600px) {
+    .container-features {
+        display: flex;
+        align-content: center;
+        text-align: left;
+        margin-top: 3em;
+    }
+
+    .computer-screen-img {
+        width: 60%;
+        margin-left: -5em;
+        margin-right: 2.5em;
+    }
+}
+
 .icon {
     margin: 2em auto;
 }
@@ -110,8 +136,23 @@ footer {
     margin: 3.5em auto;
 }
 
-.partner-logo:first-of-type {
+.container-partner-logos {
     margin-top: 4em;
+}
+
+@media (min-width: 600px) {
+    .container-partner-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 4em auto;
+    }
+
+    .partner-logo {
+        margin: 1em 2em;
+        align-self: center;
+    }
 }
 
 .tool:first-of-type {
@@ -119,18 +160,27 @@ footer {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
     padding: 3em 0;
 }
 
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container-social-media {
-    width: 35%;
     display: flex;
     justify-content: space-between;
+    width: 35%;
+    margin: 0 auto;
     margin-top: 1em;
-    
+}
+
+footer a {
+    text-decoration: none;
+    margin: .5em auto;
 }
 
 .footer-logo {
@@ -139,7 +189,34 @@ footer {
     margin-bottom: 1em;
 }
 
-footer a {
-    text-decoration: none;
-    margin: .5em auto;
+@media (min-width: 600px) {
+    footer {
+        display: flex;
+        align-items: center;
+        height: 5vh;
+        padding: 3em auto;
+    }
+
+    footer a {
+        margin: 0;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: inherit;
+        width: 50%;
+        margin: auto 0;
+    }
+
+    .container-social-media {
+        justify-content: space-around;
+        margin: 0 2em;
+        width: 15%;
+    }
+
+    .footer-logo {
+        width: 3rem;
+        margin: 0 2em;
+    }
 }
