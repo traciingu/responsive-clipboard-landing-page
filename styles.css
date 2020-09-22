@@ -189,11 +189,11 @@ footer a {
     margin-bottom: 1em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     footer {
         display: flex;
         align-items: center;
-        height: 5vh;
+        height: 7ex;
         padding: 3em auto;
     }
 
@@ -204,14 +204,14 @@ footer a {
     .footer-links {
         flex-wrap: wrap;
         align-items: flex-start;
+        justify-content: space-between;
         height: inherit;
         width: 50%;
-        margin: auto 0;
     }
 
     .container-social-media {
         justify-content: space-around;
-        margin: 0 2em;
+        margin: 0 auto;
         width: 15%;
     }
 
